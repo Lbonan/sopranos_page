@@ -1,0 +1,121 @@
+.hero {
+  min-height: 80vh;
+  background-image: url(../images/hero/familia_soprano_hero.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: inset 100px 20px 130px black;
+
+  @media (max-width: 700px) {
+    background-image: url(../images/hero/familia_soprano_hero_mobile.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    color: #f5f4f4;
+    max-width: 50%;
+    width: 100%;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+
+    @media (max-width: 700px) {
+      top: 50%;
+      margin-left: 32px;
+    }
+
+    &__branding {
+      img {
+        height: 90px;
+        margin-bottom: 12px;
+      }
+
+      @media (min-width: 1025px) {
+        img {
+          height: 120px;
+        }
+      }
+    }
+
+    &__infos {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      img {
+        height: 18px;
+      }
+      span {
+        margin-left: 8px;
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      @media (min-width: 1025px) {
+        img {
+          height: 22px;
+        }
+        span {
+          font-size: 16px;
+          list-style: 28px;
+        }
+      }
+    }
+    &__watch {
+      margin-top: 16px;
+      margin-bottom: 18px;
+      a {
+        align-items: center;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        text-decoration: none;
+        min-width: 152px;
+        padding: 10px 24px 11px;
+        background-color: #dddddd;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 1px;
+      }
+    }
+
+    &__text {
+      margin-top: 16px;
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: start;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.7);
+        text-align: start;
+
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+      }
+      @media (max-width: 700px) {
+        p {
+          font-size: 12px;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        p {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
